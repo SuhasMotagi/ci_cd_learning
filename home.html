@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container dashboard">
+  <h2>Student Dashboard</h2>
+
+  <input type="text" id="name" placeholder="Student Name">
+  <input type="number" id="age" placeholder="Age">
+  <input type="text" id="class" placeholder="Class">
+
+  <button onclick="addStudent()">Add Student</button>
+
+  <h3>Student List</h3>
+  <ul id="list"></ul>
+
+  <button style="margin-top:15px; background:red;" onclick="logout()">Logout</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
